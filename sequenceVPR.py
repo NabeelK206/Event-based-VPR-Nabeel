@@ -58,7 +58,7 @@ def sequenceVRPwithSlicedEventImages(filename_ref,filename_query, seq_len):
 
     for i in range(0,len(events_frame_ref)-time_diff):
         print(" Match: '" +str(mIndSeqs[i]) + " time: '" +str(i))
-        if abs(mIndSeqs[i]-i)<5:
+        if abs(mIndSeqs[i]-i)<3:
             match=match+1
     
     print(match)
